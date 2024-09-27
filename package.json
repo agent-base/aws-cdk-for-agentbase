@@ -1,0 +1,29 @@
+{
+  "name": "agentbase-cdk",
+  "version": "0.1.0",
+  "bin": {
+    "agentbase-cdk": "bin/agentbase-cdk.js"
+  },
+  "scripts": {
+    "init": "npx cdk bootstrap",
+    "synth": "npx cdk synth --all -q",
+    "deploy": "npx cdk deploy --all --no-rollback --require-approval never",
+    "destroy": "npx cdk destroy --all"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.19",
+    "aws-cdk": "2.147.3",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.3.3"
+  },
+  "dependencies": {
+    "@aws-quickstart/eks-blueprints": "1.15.1",
+    "@types/lodash": "^4.14.197",
+    "@types/source-map-support": "^0.5.10",
+    "aws-cdk-lib": "2.147.3",
+    "cdk-redisdb": "^0.0.39",
+    "constructs": "^10.0.0",
+    "yaml": "^2.3.2",
+    "dotenv": "^16.0.0"
+  }
+}
